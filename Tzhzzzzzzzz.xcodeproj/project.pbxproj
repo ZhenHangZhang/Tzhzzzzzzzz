@@ -15,6 +15,11 @@
 		925B36861CB3B81100C412D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925B36841CB3B81100C412D6 /* LaunchScreen.storyboard */; };
 		925B36911CB3B81100C412D6 /* TzhzzzzzzzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36901CB3B81100C412D6 /* TzhzzzzzzzzTests.m */; };
 		925B369C1CB3B81100C412D6 /* TzhzzzzzzzzUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B369B1CB3B81100C412D6 /* TzhzzzzzzzzUITests.m */; };
+		925B36B41CB3B85100C412D6 /* HYBBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36AB1CB3B85100C412D6 /* HYBBaseTransition.m */; };
+		925B36B51CB3B85100C412D6 /* HYBBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36AD1CB3B85100C412D6 /* HYBBubbleTransition.m */; };
+		925B36B61CB3B85100C412D6 /* HYBModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36AF1CB3B85100C412D6 /* HYBModalTransition.m */; };
+		925B36B71CB3B85100C412D6 /* HYBMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36B11CB3B85100C412D6 /* HYBMoveTransition.m */; };
+		925B36B81CB3B85100C412D6 /* UIViewController+HYBMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36B31CB3B85100C412D6 /* UIViewController+HYBMoveTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		925B36971CB3B81100C412D6 /* TzhzzzzzzzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TzhzzzzzzzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		925B369B1CB3B81100C412D6 /* TzhzzzzzzzzUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TzhzzzzzzzzUITests.m; sourceTree = "<group>"; };
 		925B369D1CB3B81100C412D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925B36AA1CB3B85100C412D6 /* HYBBaseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBaseTransition.h; sourceTree = "<group>"; };
+		925B36AB1CB3B85100C412D6 /* HYBBaseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBaseTransition.m; sourceTree = "<group>"; };
+		925B36AC1CB3B85100C412D6 /* HYBBubbleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBubbleTransition.h; sourceTree = "<group>"; };
+		925B36AD1CB3B85100C412D6 /* HYBBubbleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBubbleTransition.m; sourceTree = "<group>"; };
+		925B36AE1CB3B85100C412D6 /* HYBModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBModalTransition.h; sourceTree = "<group>"; };
+		925B36AF1CB3B85100C412D6 /* HYBModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBModalTransition.m; sourceTree = "<group>"; };
+		925B36B01CB3B85100C412D6 /* HYBMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBMoveTransition.h; sourceTree = "<group>"; };
+		925B36B11CB3B85100C412D6 /* HYBMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBMoveTransition.m; sourceTree = "<group>"; };
+		925B36B21CB3B85100C412D6 /* UIViewController+HYBMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HYBMoveTransition.h"; sourceTree = "<group>"; };
+		925B36B31CB3B85100C412D6 /* UIViewController+HYBMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HYBMoveTransition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		925B36751CB3B81100C412D6 /* Tzhzzzzzzzz */ = {
 			isa = PBXGroup;
 			children = (
+				925B36A91CB3B85100C412D6 /* HYBControllerTransitions */,
 				925B36791CB3B81100C412D6 /* AppDelegate.h */,
 				925B367A1CB3B81100C412D6 /* AppDelegate.m */,
 				925B367C1CB3B81100C412D6 /* ViewController.h */,
@@ -138,6 +154,23 @@
 				925B369D1CB3B81100C412D6 /* Info.plist */,
 			);
 			path = TzhzzzzzzzzUITests;
+			sourceTree = "<group>";
+		};
+		925B36A91CB3B85100C412D6 /* HYBControllerTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				925B36AA1CB3B85100C412D6 /* HYBBaseTransition.h */,
+				925B36AB1CB3B85100C412D6 /* HYBBaseTransition.m */,
+				925B36AC1CB3B85100C412D6 /* HYBBubbleTransition.h */,
+				925B36AD1CB3B85100C412D6 /* HYBBubbleTransition.m */,
+				925B36AE1CB3B85100C412D6 /* HYBModalTransition.h */,
+				925B36AF1CB3B85100C412D6 /* HYBModalTransition.m */,
+				925B36B01CB3B85100C412D6 /* HYBMoveTransition.h */,
+				925B36B11CB3B85100C412D6 /* HYBMoveTransition.m */,
+				925B36B21CB3B85100C412D6 /* UIViewController+HYBMoveTransition.h */,
+				925B36B31CB3B85100C412D6 /* UIViewController+HYBMoveTransition.m */,
+			);
+			path = HYBControllerTransitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				925B367E1CB3B81100C412D6 /* ViewController.m in Sources */,
+				925B36B51CB3B85100C412D6 /* HYBBubbleTransition.m in Sources */,
 				925B367B1CB3B81100C412D6 /* AppDelegate.m in Sources */,
 				925B36781CB3B81100C412D6 /* main.m in Sources */,
+				925B36B81CB3B85100C412D6 /* UIViewController+HYBMoveTransition.m in Sources */,
+				925B36B61CB3B85100C412D6 /* HYBModalTransition.m in Sources */,
+				925B36B71CB3B85100C412D6 /* HYBMoveTransition.m in Sources */,
+				925B36B41CB3B85100C412D6 /* HYBBaseTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
