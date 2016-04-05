@@ -20,6 +20,17 @@
 		925B36B61CB3B85100C412D6 /* HYBModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36AF1CB3B85100C412D6 /* HYBModalTransition.m */; };
 		925B36B71CB3B85100C412D6 /* HYBMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36B11CB3B85100C412D6 /* HYBMoveTransition.m */; };
 		925B36B81CB3B85100C412D6 /* UIViewController+HYBMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36B31CB3B85100C412D6 /* UIViewController+HYBMoveTransition.m */; };
+		925B36CF1CB3B8DB00C412D6 /* HYBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36BA1CB3B8DB00C412D6 /* HYBBaseViewController.m */; };
+		925B36D01CB3B8DB00C412D6 /* HYBBubbleFromBottomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36BC1CB3B8DB00C412D6 /* HYBBubbleFromBottomController.m */; };
+		925B36D11CB3B8DB00C412D6 /* HYBBubbleRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36BE1CB3B8DB00C412D6 /* HYBBubbleRightViewController.m */; };
+		925B36D21CB3B8DB00C412D6 /* HYBGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36C01CB3B8DB00C412D6 /* HYBGridCell.m */; };
+		925B36D31CB3B8DB00C412D6 /* HYBGridModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36C21CB3B8DB00C412D6 /* HYBGridModel.m */; };
+		925B36D41CB3B8DB00C412D6 /* HYBModalBubbleTopRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36C41CB3B8DB00C412D6 /* HYBModalBubbleTopRightViewController.m */; };
+		925B36D51CB3B8DB00C412D6 /* HYBModalBubbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36C61CB3B8DB00C412D6 /* HYBModalBubbleViewController.m */; };
+		925B36D61CB3B8DB00C412D6 /* HYBModalHalfController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36C81CB3B8DB00C412D6 /* HYBModalHalfController.m */; };
+		925B36D71CB3B8DB00C412D6 /* HYBModalHalfDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36CA1CB3B8DB00C412D6 /* HYBModalHalfDetailController.m */; };
+		925B36D81CB3B8DB00C412D6 /* HYBMoveDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36CC1CB3B8DB00C412D6 /* HYBMoveDetailController.m */; };
+		925B36D91CB3B8DB00C412D6 /* HYBMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B36CE1CB3B8DB00C412D6 /* HYBMoveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +77,28 @@
 		925B36B11CB3B85100C412D6 /* HYBMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBMoveTransition.m; sourceTree = "<group>"; };
 		925B36B21CB3B85100C412D6 /* UIViewController+HYBMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HYBMoveTransition.h"; sourceTree = "<group>"; };
 		925B36B31CB3B85100C412D6 /* UIViewController+HYBMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HYBMoveTransition.m"; sourceTree = "<group>"; };
+		925B36B91CB3B8DB00C412D6 /* HYBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBaseViewController.h; sourceTree = "<group>"; };
+		925B36BA1CB3B8DB00C412D6 /* HYBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBaseViewController.m; sourceTree = "<group>"; };
+		925B36BB1CB3B8DB00C412D6 /* HYBBubbleFromBottomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBubbleFromBottomController.h; sourceTree = "<group>"; };
+		925B36BC1CB3B8DB00C412D6 /* HYBBubbleFromBottomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBubbleFromBottomController.m; sourceTree = "<group>"; };
+		925B36BD1CB3B8DB00C412D6 /* HYBBubbleRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBubbleRightViewController.h; sourceTree = "<group>"; };
+		925B36BE1CB3B8DB00C412D6 /* HYBBubbleRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBubbleRightViewController.m; sourceTree = "<group>"; };
+		925B36BF1CB3B8DB00C412D6 /* HYBGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBGridCell.h; sourceTree = "<group>"; };
+		925B36C01CB3B8DB00C412D6 /* HYBGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBGridCell.m; sourceTree = "<group>"; };
+		925B36C11CB3B8DB00C412D6 /* HYBGridModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBGridModel.h; sourceTree = "<group>"; };
+		925B36C21CB3B8DB00C412D6 /* HYBGridModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBGridModel.m; sourceTree = "<group>"; };
+		925B36C31CB3B8DB00C412D6 /* HYBModalBubbleTopRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBModalBubbleTopRightViewController.h; sourceTree = "<group>"; };
+		925B36C41CB3B8DB00C412D6 /* HYBModalBubbleTopRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBModalBubbleTopRightViewController.m; sourceTree = "<group>"; };
+		925B36C51CB3B8DB00C412D6 /* HYBModalBubbleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBModalBubbleViewController.h; sourceTree = "<group>"; };
+		925B36C61CB3B8DB00C412D6 /* HYBModalBubbleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBModalBubbleViewController.m; sourceTree = "<group>"; };
+		925B36C71CB3B8DB00C412D6 /* HYBModalHalfController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBModalHalfController.h; sourceTree = "<group>"; };
+		925B36C81CB3B8DB00C412D6 /* HYBModalHalfController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBModalHalfController.m; sourceTree = "<group>"; };
+		925B36C91CB3B8DB00C412D6 /* HYBModalHalfDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBModalHalfDetailController.h; sourceTree = "<group>"; };
+		925B36CA1CB3B8DB00C412D6 /* HYBModalHalfDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBModalHalfDetailController.m; sourceTree = "<group>"; };
+		925B36CB1CB3B8DB00C412D6 /* HYBMoveDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBMoveDetailController.h; sourceTree = "<group>"; };
+		925B36CC1CB3B8DB00C412D6 /* HYBMoveDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBMoveDetailController.m; sourceTree = "<group>"; };
+		925B36CD1CB3B8DB00C412D6 /* HYBMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBMoveViewController.h; sourceTree = "<group>"; };
+		925B36CE1CB3B8DB00C412D6 /* HYBMoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBMoveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +154,28 @@
 				925B367A1CB3B81100C412D6 /* AppDelegate.m */,
 				925B367C1CB3B81100C412D6 /* ViewController.h */,
 				925B367D1CB3B81100C412D6 /* ViewController.m */,
+				925B36B91CB3B8DB00C412D6 /* HYBBaseViewController.h */,
+				925B36BA1CB3B8DB00C412D6 /* HYBBaseViewController.m */,
+				925B36BB1CB3B8DB00C412D6 /* HYBBubbleFromBottomController.h */,
+				925B36BC1CB3B8DB00C412D6 /* HYBBubbleFromBottomController.m */,
+				925B36BD1CB3B8DB00C412D6 /* HYBBubbleRightViewController.h */,
+				925B36BE1CB3B8DB00C412D6 /* HYBBubbleRightViewController.m */,
+				925B36BF1CB3B8DB00C412D6 /* HYBGridCell.h */,
+				925B36C01CB3B8DB00C412D6 /* HYBGridCell.m */,
+				925B36C11CB3B8DB00C412D6 /* HYBGridModel.h */,
+				925B36C21CB3B8DB00C412D6 /* HYBGridModel.m */,
+				925B36C31CB3B8DB00C412D6 /* HYBModalBubbleTopRightViewController.h */,
+				925B36C41CB3B8DB00C412D6 /* HYBModalBubbleTopRightViewController.m */,
+				925B36C51CB3B8DB00C412D6 /* HYBModalBubbleViewController.h */,
+				925B36C61CB3B8DB00C412D6 /* HYBModalBubbleViewController.m */,
+				925B36C71CB3B8DB00C412D6 /* HYBModalHalfController.h */,
+				925B36C81CB3B8DB00C412D6 /* HYBModalHalfController.m */,
+				925B36C91CB3B8DB00C412D6 /* HYBModalHalfDetailController.h */,
+				925B36CA1CB3B8DB00C412D6 /* HYBModalHalfDetailController.m */,
+				925B36CB1CB3B8DB00C412D6 /* HYBMoveDetailController.h */,
+				925B36CC1CB3B8DB00C412D6 /* HYBMoveDetailController.m */,
+				925B36CD1CB3B8DB00C412D6 /* HYBMoveViewController.h */,
+				925B36CE1CB3B8DB00C412D6 /* HYBMoveViewController.m */,
 				925B367F1CB3B81100C412D6 /* Main.storyboard */,
 				925B36821CB3B81100C412D6 /* Assets.xcassets */,
 				925B36841CB3B81100C412D6 /* LaunchScreen.storyboard */,
@@ -303,13 +358,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925B36D71CB3B8DB00C412D6 /* HYBModalHalfDetailController.m in Sources */,
+				925B36CF1CB3B8DB00C412D6 /* HYBBaseViewController.m in Sources */,
+				925B36D21CB3B8DB00C412D6 /* HYBGridCell.m in Sources */,
+				925B36D61CB3B8DB00C412D6 /* HYBModalHalfController.m in Sources */,
+				925B36D31CB3B8DB00C412D6 /* HYBGridModel.m in Sources */,
+				925B36D41CB3B8DB00C412D6 /* HYBModalBubbleTopRightViewController.m in Sources */,
 				925B367E1CB3B81100C412D6 /* ViewController.m in Sources */,
+				925B36D91CB3B8DB00C412D6 /* HYBMoveViewController.m in Sources */,
+				925B36D11CB3B8DB00C412D6 /* HYBBubbleRightViewController.m in Sources */,
+				925B36D51CB3B8DB00C412D6 /* HYBModalBubbleViewController.m in Sources */,
 				925B36B51CB3B85100C412D6 /* HYBBubbleTransition.m in Sources */,
 				925B367B1CB3B81100C412D6 /* AppDelegate.m in Sources */,
 				925B36781CB3B81100C412D6 /* main.m in Sources */,
 				925B36B81CB3B85100C412D6 /* UIViewController+HYBMoveTransition.m in Sources */,
 				925B36B61CB3B85100C412D6 /* HYBModalTransition.m in Sources */,
 				925B36B71CB3B85100C412D6 /* HYBMoveTransition.m in Sources */,
+				925B36D81CB3B8DB00C412D6 /* HYBMoveDetailController.m in Sources */,
+				925B36D01CB3B8DB00C412D6 /* HYBBubbleFromBottomController.m in Sources */,
 				925B36B41CB3B85100C412D6 /* HYBBaseTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,6 +600,7 @@
 				925B36A21CB3B81100C412D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		925B36A31CB3B81100C412D6 /* Build configuration list for PBXNativeTarget "TzhzzzzzzzzTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +609,7 @@
 				925B36A51CB3B81100C412D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		925B36A61CB3B81100C412D6 /* Build configuration list for PBXNativeTarget "TzhzzzzzzzzUITests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +618,7 @@
 				925B36A81CB3B81100C412D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
