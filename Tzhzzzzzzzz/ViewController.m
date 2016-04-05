@@ -7,8 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "HYBModalBubbleViewController.h"
+#import "HYBModalBubbleTopRightViewController.h"
+#import "HYBModalHalfController.h"
+#import "HYBMoveViewController.h"
 
-@interface ViewController ()
+#define kCellIdentifier @"GITHUB Name CoderJackyHuang"
+
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) NSArray *datasource;
 
 @end
 
@@ -16,12 +25,66 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"Test how to use transition";
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    layout.itemSize = CGSizeMake(self.view.frame.size.width, 44);
+    layout.minimumLineSpacing = 0;
+    
+    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds
+                                             collectionViewLayout:layout];
+    [self.view addSubview:self.collectionView];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    self.collectionView.showsVerticalScrollIndicator = YES;
+    [self.collectionView registerClass:[UICollectionViewCell class]
+            forCellWithReuseIdentifier:kCellIdentifier];
+    
+    self.datasource = @[[[HYBModalBubbleViewController alloc] initWithTitle:@"Bubble from bottom"],
+                        [[HYBModalBubbleTopRightViewController alloc] initWithTitle:@"Bubble from top right"],
+                        [[HYBModalHalfController alloc] initWithTitle:@"Modal present half"],
+                        [[HYBMoveViewController alloc] initWithTitle:@"Move push/pop"],
+                        ];
+    [self.collectionView reloadData];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UICollectionViewDataSource & UICollectionViewDelegate
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellIdentifier
+                                                                           forIndexPath:indexPath];
+    UILabel *titleLabel = [cell.contentView viewWithTag:100];
+    if (!titleLabel) {
+        titleLabel = [[UILabel alloc] init];
+        titleLabel.frame = CGRectMake(20,
+                                      0,
+                                      cell.contentView.bounds.size.width - 40,
+                                      cell.contentView.bounds.size.height);
+        titleLabel.tag = 100;
+        [cell.contentView addSubview:titleLabel];
+        
+        UILabel *label = [[UILabel alloc] init];
+        label.backgroundColor = [UIColor lightGrayColor];
+        label.frame = CGRectMake(0, cell.contentView.bounds.size.height, cell.contentView.bounds.size.width, 0.5);
+        [cell.contentView addSubview:label];
+    }
+    
+    UIViewController *vc = self.datasource[indexPath.item];
+    titleLabel.text = vc.title;
+    
+    return cell;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.datasource.count;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *vc = self.datasource[indexPath.item];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
